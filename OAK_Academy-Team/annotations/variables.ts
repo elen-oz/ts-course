@@ -31,5 +31,25 @@ const printer: (content: string) => void = (content) => {
 
 //* Functions that returns the 'any' type
 const place = '{"lat": 45, "lon": -70}';
-const newLocation = JSON.parse(place);
-console.log(newLocation);
+const newLocation: { lat: number; lon: number } = JSON.parse(place);
+console.log(newLocation); // { lat: 45, lon: -70 }
+
+//* Initialize variable later
+const forecast = ['sunny', 'rain', 'wind', 'cloudy'];
+let isSunny: boolean;
+
+for (let i = 0; i < forecast.length; i += 1) {
+  if (forecast[i] === 'sunny') {
+    isSunny = true;
+  }
+}
+
+//* Type ca't be inferred correctly
+let temperatures = [8, 5, -2];
+let subzero: boolean | number = false;
+
+for (let i = 0; i < temperatures[i]; i += 1) {
+  if (temperatures[i] < 0) {
+    subzero = temperatures[i];
+  }
+}
