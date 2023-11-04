@@ -1,9 +1,9 @@
 const now = new Date();
 now.getFullYear();
 
-const track = {
-  duration: 120,
-};
+// const track = {
+//   duration: 120,
+// };
 
 class Planet {}
 
