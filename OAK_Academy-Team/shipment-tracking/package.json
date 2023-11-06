@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@faker-js/faker": "^8.2.0",
+    "@types/google.maps": "^3.54.6",
     "ts-loader": "^9.5.0",
     "typescript": "^5.2.2",
     "webpack-cli": "^5.1.4"
